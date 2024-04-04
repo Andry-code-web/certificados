@@ -35,3 +35,5 @@ app.use(morgan('dev'));
 app.listen(app.get('PORT'), () => {
     console.log("Servidor en puerto 3000");
 });
+
+module.exports = app;
