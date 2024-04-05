@@ -10,9 +10,12 @@ app.use(express.json());
 
 //configuracion de express-session
 app.use(session({
-    secret: 'secretClave', // Una clave secreta para firmar la cookie de sesión
+    // Una clave secreta para firmar la cookie de sesión
+    secret: 'secretClave', 
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
+    //creamos un espacio en la mmemoria para almacenar la sesion
+    store: new session.MemoryStore()
 }));
 
 // Base de datos
@@ -35,5 +38,3 @@ app.use(morgan('dev'));
 app.listen(app.get('PORT'), () => {
     console.log("Servidor en puerto 3000");
 });
-
-module.exports = app;
