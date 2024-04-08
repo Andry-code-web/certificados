@@ -10,12 +10,6 @@
       { "src": "/api/admin", "dest": "src/routes/admin.js" },
       { "src": "/api/users", "dest": "src/routes/users.js" },
       { "src": "/(.*)", "dest": "src/app.js" }
-    ],
-    "functions": {
-      "api": {
-        "source": "/api/(.*)",
-        "destination": "src/routes/$1.js"
-      }
-    }
+    ]
   }
   
