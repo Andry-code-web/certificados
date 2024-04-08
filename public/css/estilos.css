@@ -3,6 +3,12 @@
 :root{
     --letra-titulo: "Bakbak One";
     --letra-titulo--2: "Viga";
+    --color-cabezera: #383642;
+    --color-borde-cabezera: rgba(34, 136, 184, 1);
+    --nav-gap: 20px;
+    --social-color: #365493;
+    --youtube-color: #CB2027;
+    --tiktok-color: #010101;
 }
 
 *{
@@ -18,6 +24,99 @@
     justify-content: center;
     background-image: url("/img/fondo_certificados.jpg");
 }
+
+/* CABEZERA */
+
+.cabezera{
+    background-color: var(--color-cabezera);
+    width: 100%;
+    height: 110px;
+    border-bottom: var(--color-borde-cabezera) solid .35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+}
+
+.logo{
+    width: 10%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.cabezera nav{
+    display: flex;
+    gap: 1px var(--nav-gap);
+}
+
+.cabezera nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.redes{
+    display: flex;
+    gap: .5rem;
+}
+
+.redes .face, .yout, .tik{
+    width: 30px;
+    height: 30px;
+    border:2px solid rgba(255,255,255,0.4);
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease;
+}
+
+.redes .face:hover{
+    border-color: var(--social-color);
+    background-color: var(--social-color);
+}
+.redes .yout:hover{
+    border-color: var(--youtube-color);
+    background-color: var(--youtube-color);
+}
+.redes .tik:hover{
+    border-color: var(--tiktok-color);
+    background-color: var(--tiktok-color);
+}
+
+.bi{
+    color: white;
+    font-size: 16px;
+}
+
+.contacto{
+    width: 95px;
+    height: 35px;
+    border:2px solid rgba(255,255,255,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 1rem;
+    transition: ease;
+}
+
+.contacto:hover{
+    border: 2px solid white;
+}
+
+.contacto a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+}
+
 
 .content{
     width: 75%;

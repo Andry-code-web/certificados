@@ -29,12 +29,12 @@ app.use('/user', usersRouter);
 app.use("/admin", adminRouter);
 
 // Configuraciones
-app.set('PORT', process.env.PORT || 3000);
+app.set('PORT', process.env.PORT || 3003);
 app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
 app.use(morgan('dev'));
 
 app.listen(app.get('PORT'), () => {
-    console.log("Servidor en puerto 3000");
+    console.log("Servidor en puerto 3003");
 });
