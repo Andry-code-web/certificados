@@ -117,10 +117,9 @@
     font-size: 12px;
 }
 
-
 .content{
     width: 75%;
-    margin-top: 11rem;
+    margin-top: 2rem;
 }
 
 .buscador{
@@ -139,3 +138,22 @@ table td{
 table tbody td button{
     display: flex;
 }
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-cabezera);
+    display: flex;
+    padding: 1rem 3rem 0rem 3rem;
+}
+
+.logo_eslogan img{
+    width: 100%;
+}
+
+.logo_eslogan p{
+    color: white;
+    font-size: .5rem;
+}
+
+
