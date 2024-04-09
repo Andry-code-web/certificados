@@ -9,6 +9,8 @@
     --social-color: #365493;
     --youtube-color: #CB2027;
     --tiktok-color: #010101;
+    --bg--footer: url("/img/foter_page-compressed.jpg");
+    --color-letra-footer: #6ec1e4;
 }
 
 *{
@@ -142,18 +144,56 @@ table tbody td button{
 footer{
     width: 100%;
     height: auto;
-    background-color: var(--color-cabezera);
+    background-image: var(--bg--footer);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    padding: 1rem 3rem 0rem 3rem;
+    gap: .5rem;
+    padding: 3rem 15rem 0rem 15rem;
+}
+
+footer div h3{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    color: var(--color-letra-footer);
+}
+
+.logo_eslogan{
+    width: 30%;
+    text-align: center;
 }
 
 .logo_eslogan img{
-    width: 100%;
+    width: 70%;
+    margin-bottom: 1rem;
 }
 
 .logo_eslogan p{
     color: white;
-    font-size: .5rem;
+    font-size: .9rem;
+    text-align: justify;
+    line-height: 1.8rem;
 }
 
+.libro a img{
+    width: 5rem;
+}
 
+.datos_contacto{
+    margin-left: 2rem;
+}
+
+.datos_contacto h3{
+    color: var(--color-letra-footer);
+}
+
+.icon_contact{
+    fill: var(--color-letra-footer);
+    width: 20px;
+    margin-right: 5px;
+}
+
+.correo, .horario, .menu{
+    display: flex;
+    flex-direction: column;
+}
